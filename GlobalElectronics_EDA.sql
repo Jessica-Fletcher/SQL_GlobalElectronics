@@ -164,7 +164,8 @@ WHERE st.Country = 'United States'
 GROUP BY st.State
 ORDER BY 2 DESC;
 
--- Calculate the customer retention rate for 2019
+-- -- -- --  Calculate the customer retention rate for 2019 -- -- -- -- 
+
 -- using CRR = [(E-N)/S]x100
 
 -- first, update OrderDate column from a string to a date
@@ -209,7 +210,7 @@ AND OrderDate BETWEEN '2019-01-01' AND '2019-12-31';
     
 -- join the tables and calculate the retention rate
 -- note: use cross join, since you are joining together aggregated results, and not joining on a specific condition
--- result of the cross join is a single row w/ ExisitingCount, NewCount, and ActiveCount 
+-- result of the cross join is a single row w/ ExisitingCount, NewCount, and ActiveCount; these are used to calulate CRR
 
 WITH ExistingCustomers AS (
 SELECT 
