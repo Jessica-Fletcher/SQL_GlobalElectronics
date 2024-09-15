@@ -39,7 +39,7 @@ LIMIT 1;
 
 -- First, convert birthdays from strings to dates
 
-SET sql_mode=''; # bug in SQL 
+SET sql_mode=''; # bug correction
 
 UPDATE customers SET Birthday = STR_TO_DATE(Birthday,'%c-%e-%Y');
 
