@@ -22,3 +22,6 @@ Store Performance and Geographic Analysis
 
 Customer Retention Analysis
 1. Calculation of customer retention rate for 2019
+
+
+The global electronics data set can be accessed at https://www.kaggle.com/datasets/bhavikjikadara/global-electronics-retailers/data
