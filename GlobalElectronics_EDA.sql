@@ -64,10 +64,10 @@ FROM Customers;
 WITH cte AS (SELECT CustomerKey, 
 	(CASE 
 		WHEN Age between 18 and 24 then '18-24'
-		when Age between 25 and 34 then '25-34'
-		when Age between 35 and 44 then '35-44'
-		when Age between 45 and 54 then '45-54'
-		when Age between 55 and 64 then '55-64'
+		WHEN Age between 25 and 34 then '25-34'
+		WHEN Age between 35 and 44 then '35-44'
+		WHEN Age between 45 and 54 then '45-54'
+		WHEN Age between 55 and 64 then '55-64'
 		ELSE '65 and older'
     END) as age_range
 FROM customers)
@@ -86,11 +86,11 @@ ORDER BY 2 DESC;
 with cte as 
 	(SELECT CustomerKey,
 		(case 
-		when Age between 18 and 24 then '18-24'
-		when Age between 25 and 34 then '25-34'
-		when Age between 35 and 44 then '35-44'
-		when Age between 45 and 54 then '45-54'
-		when Age between 55 and 64 then '55-64'
+		WHEN Age between 18 and 24 then '18-24'
+		WHEN Age between 25 and 34 then '25-34'
+		WHEN Age between 35 and 44 then '35-44'
+		WHEN Age between 45 and 54 then '45-54'
+		WHEN Age between 55 and 64 then '55-64'
 		ELSE '65 and older'
 		END) as age_range
 	FROM customers)
