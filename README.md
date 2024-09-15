@@ -5,10 +5,10 @@ Project Overview
 This project conducts an exploratory data analysis on a retail dataset using SQL. The analysis focuses on customer demographics, store performance, and geographic insights to derive valuable business intelligence.
 
 Table of Contents
-  
-  Customer Demographics and Segmentation
-  Store Performance and Geographic Analysis
-  Customer Retention Analysis
+
+  1. Customer Demographics and Segmentation
+  2.  Store Performance and Geographic Analysis
+  3.  Customer Retention Analysis
 
 Customer Demographics and Segmentation
 1. Gender distribution analysis
